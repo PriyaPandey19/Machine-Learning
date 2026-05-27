@@ -12,7 +12,7 @@ model = joblib.load('food_price_model.pkl')
 scaler = joblib.load('scaler.pkl')
 columns = joblib.load('columns.pkl')
 
-st.title('🍚 Food Price Prediction - Nigeria')
+st.title('Food Price Prediction - Nigeria')
 st.write('Fill in the details to predict food price')
 
 # Actual values from your dataset
