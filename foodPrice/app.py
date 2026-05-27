@@ -8,9 +8,9 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load saved files
-model = joblib.load('food_price_model.pkl')
-scaler = joblib.load('scaler.pkl')
-columns = joblib.load('columns.pkl')
+model   = joblib.load(os.path.join(BASE_DIR, 'food_price_model.pkl'))
+scaler  = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))
+columns = joblib.load(os.path.join(BASE_DIR, 'columns.pkl'))
 
 st.title('Food Price Prediction - Nigeria')
 st.write('Fill in the details to predict food price')
