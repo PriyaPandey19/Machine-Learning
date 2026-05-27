@@ -3,6 +3,9 @@ import joblib
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load saved files
 model = joblib.load('food_price_model.pkl')
