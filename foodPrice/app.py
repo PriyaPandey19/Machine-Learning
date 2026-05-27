@@ -19,8 +19,8 @@ st.write('Fill in the details to predict food price')
 commodity_list = ['Rice', 'Tomatoes', 'Yam', 'Beans', 'Maize', 'Plantain', 'Cassava']
 location_list  = ['Lagos', 'Abuja', 'Kano', 'Ibadan', 'Port Harcourt', 'Enugu', 'Kaduna']
 
-commodity = st.selectbox('🛒 Select Commodity', commodity_list)
-location  = st.selectbox('📍 Select Location',  location_list)
+commodity = st.selectbox(' Select Commodity', commodity_list)
+location  = st.selectbox(' Select Location',  location_list)
 
 temperature = st.slider('🌡️ Temperature (°C)', 20, 45, 30)
 rainfall    = st.slider('🌧️ Rainfall (mm)',     0,  20,  5)
